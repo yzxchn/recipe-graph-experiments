@@ -1,0 +1,67 @@
+digraph {
+	I9 [label=salt]
+	T3 [label="a damp cloth"]
+	A15 [label=Allow]
+	I6 [label="the sugar"]
+	I12 [label=flour]
+	A8 [label=Cover]
+	A13 [label=Shape]
+	T2 [label="a well oiled bowl"]
+	A5 [label=Knead]
+	I8 [label=yeast]
+	T0 [label="a large bowl"]
+	T4 [label="two well oiled 9x5 inch loaf pans"]
+	A12 [label=divide]
+	I7 [label="warm water"]
+	A14 [label=place]
+	T1 [label="a lightly floured surface"]
+	A11 [label=Knead]
+	I16 [label=loaves]
+	A0 [label=dissolve]
+	A3 [label=Mix]
+	A1 [label=stir]
+	A7 [label=turn]
+	A16 [label=Bake]
+	A10 [label=Punch]
+	I14 [label=dough]
+	I11 [label="the yeast"]
+	A2 [label=Allow]
+	I15 [label=dough]
+	A9 [label=Allow]
+	A6 [label=Place]
+	A4 [label=Mix]
+	I13 [label=dough]
+	I10 [label=oil]
+	T0 -> A0
+	I6 -> A0
+	I7 -> A0
+	A0 -> A1
+	I8 -> A1
+	A1 -> A2
+	A2 -> I11
+	I9 -> A3
+	I10 -> A3
+	I11 -> A3
+	I12 -> A4
+	A3 -> I13
+	I13 -> A5
+	T1 -> A5
+	A5 -> A6
+	T2 -> A6
+	A6 -> I14
+	I14 -> A7
+	A7 -> A8
+	T3 -> A8
+	A8 -> A9
+	A9 -> I15
+	I15 -> A10
+	A10 -> A11
+	A11 -> A12
+	A12 -> A13
+	T4 -> A14
+	A14 -> A15
+	A13 -> I16
+	I16 -> A14
+	A3 -> A4
+	A15 -> A16
+}
