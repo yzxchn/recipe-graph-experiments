@@ -1,5 +1,7 @@
 crfsuite-0.12
 ing_ER/ing_ER_data
 ing_ER/with_features
+ins_ER/ins_ER_data
+ins_ER/with_features
 __pycache__
 *.pyc

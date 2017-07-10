@@ -15,7 +15,7 @@ def ingredient_pos_align(text, offset=0):
         processed_line = nlp(line)
         for w in processed_line:
             beg, i = find_token_position(w.text, text, i)
-            line_tokens.append((w.text, w.pos_, (beg+offset, i+offset)))
+            line_tokens.append((w.text, w.tag_, w.pos_, (beg+offset, i+offset)))
         tokens.append(line_tokens) 
     return tokens
 
@@ -30,7 +30,22 @@ def instruction_pos_align(text, offset=0):
         sent_tokens = []
         for w in sent:
             beg, i = find_token_position(w.text, text, i)
-            sent_tokens.append((w.text, w.pos_, (beg+offset, i+offset)))
+            sent_tokens.append((w.text,
+                                w.lemma_,
+                                w.tag_, 
+                                w.pos_, 
+                                w.dep_,
+                                w.head.text,
+                                w.head.lemma_,
+                                w.head.tag_,
+                                w.head.pos_,
+                                w.head.dep_,
+                                w.head.head.text,
+                                w.head.head.lemma_,
+                                w.head.head.tag_,
+                                w.head.head.pos_,
+                                w.head.head.dep_,
+                                (beg+offset, i+offset)))
         tokens.append(sent_tokens)
     return tokens
 
@@ -74,7 +89,10 @@ if __name__ == "__main__":
 
     Commandline arguments:
     file_directory: the root directory of all the annotated XML recipes
-    entity_directory: the root directory to output files containing entity tags
+    ing_entity_directory: the root directory to output files containing 
+                          ingredient entity tags.
+    instruct_entity_directory: the root directory to output files containing 
+                               instruction entity tags
     link_directory: the root directory to output files containing link tags
     """
     file_directory = sys.argv[1]
@@ -90,11 +108,14 @@ if __name__ == "__main__":
         # output files maintain the same directory structure (organized by 
         # source website) as the input files
         ing_ent_out_path = os.path.join(ing_entity_directory, 
-                               file_ops.truncate_path(parents, 1), ing_ent_out_name)
+                                        file_ops.truncate_path(parents, 1), 
+                                        ing_ent_out_name)
         ent_out_path = os.path.join(instruct_entity_directory, 
-                               file_ops.truncate_path(parents, 1), ent_out_name)
+                                    file_ops.truncate_path(parents, 1), 
+                                    ent_out_name)
         link_out_path = os.path.join(link_directory, 
-                               file_ops.truncate_path(parents, 1), link_out_name)
+                                     file_ops.truncate_path(parents, 1), 
+                                     link_out_name)
         with open(ing_ent_out_path,'w') as ing_ent_out,\
             open(ent_out_path, "w") as ent_out, \
             open(link_out_path, 'w') as link_out:
@@ -107,7 +128,10 @@ if __name__ == "__main__":
             # a sentence in the document
             for sent in instruct_tokens:
                 for tok in sent:
-                    text, pos, range_ = tok
+                    text, lemma, tag, pos, dep = tok[:5]
+                    ptext, plemma, ptag, ppos, pdep = tok[5:10]
+                    pptext, pplemma, pptag, pppos, ppdep = tok[10:15]
+                    range_ = tok[-1]
                     r_beg, r_end = range_
                     covering_entities = doc.get_covering_entities(r_beg, r_end)
                     covering_ids = '|'.join(covering_entities)
@@ -116,12 +140,15 @@ if __name__ == "__main__":
                         covering_ids = '-'
                     ent_out.write(format_output(covering_ids,
                                                 r_beg, r_end,
-                                                text, pos) +"\n")
+                                                text, lemma, tag, pos, dep,
+                                                ptext, plemma, ptag, ppos, pdep,
+                                                pptext, pplemma, pptag, 
+                                                pppos, ppdep) +"\n")
                 ent_out.write("\n")
             # find the entities in the ingredients section.
             for line in ing_tokens:
                 for tok in line:
-                    text, pos, range_ = tok
+                    text, tag, pos, range_ = tok
                     r_beg, r_end = range_
                     covering_entities = doc.get_covering_entities(r_beg, r_end)
                     covering_ids = '|'.join(covering_entities)
@@ -129,7 +156,7 @@ if __name__ == "__main__":
                         covering_ids = '-'
                     ing_ent_out.write(format_output(covering_ids, 
                                                     r_beg, r_end,
-                                                    text, pos) + "\n")
+                                                    text, tag, pos) + "\n")
                 ing_ent_out.write("\n")
             link_tags = doc.get_link_tags()
             for lt in link_tags:
