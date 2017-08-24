@@ -1,0 +1,179 @@
+melt
+warm
+slice
+roast
+cook
+roll
+coat
+simmer
+reserve
+reserve
+chop
+Dev Test Errors:
+False Negatives:
+Make a well in the center and pour in the milk , egg and melted butter ; mix until smooth .  
+...
+Pour or scoop the batter onto the griddle , using approximately 1/4 cup for each pancake . Brown on both sides and serve hot .
+mix | the batter Predicted: False
+
+Immediately remove from hot water and cool in an ice water bath .
+...
+When cool enough to handle , peel and chop eggs .  
+cool | eggs Predicted: False
+
+Set aside .  
+...
+In a large bowl , combine drained pasta , celery , onion , olives , sweet pickles , carrots , green pepper , and chopped eggs .
+Set | drained pasta Predicted: False
+
+When cool enough to handle , peel and chop eggs .  
+...
+In a large bowl , combine drained pasta , celery , onion , olives , sweet pickles , carrots , green pepper , and chopped eggs .
+chop | chopped eggs Predicted: False
+
+Season with salt and black pepper .  
+...
+Stir in dressing , and mix well .
+Season | dressing Predicted: False
+
+Season short ribs with salt and pepper .
+...
+Working in 2 batches , brown short ribs on all sides , about 8 minutes per batch .
+Season | short ribs Predicted: False
+
+Working in 2 batches , brown short ribs on all sides , about 8 minutes per batch .
+...
+Pour off all but 3 tablespoons drippings from pot .  
+brown | 3 tablespoons drippings Predicted: False
+
+Transfer short ribs to a plate .
+...
+Stir in wine , then add short ribs with any accumulated juices .
+Transfer | short ribs Predicted: False
+
+Cook until short ribs are tender , 2 - 2 1/2 hours .
+...
+Strain sauce from pot into a measuring cup .
+Cook | sauce Predicted: False
+
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+...
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+Spoon | fat Predicted: False
+
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+...
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+Spoon | sauce Predicted: False
+
+Add pasta and cook for 8 to 10 minutes or until al dente ; drain .  
+...
+Add the cooked linguine , toss and heat through .
+drain | the cooked linguine Predicted: False
+
+Stir in flour to form a paste .
+...
+Stir in flour to form a paste .
+form | a paste Predicted: False
+
+In a slow cooker , mix cream of mushroom soup , dry onion soup mix and water .
+...
+Place pot roast in slow cooker and coat with soup mixture .  
+mix | soup mixture Predicted: False
+
+
+False Positives:
+When cool enough to handle , peel and chop eggs .  
+...
+When cool enough to handle , peel and chop eggs .  
+peel | eggs Predicted: True
+
+Season with salt and black pepper .  
+...
+In a large bowl , combine drained pasta , celery , onion , olives , sweet pickles , carrots , green pepper , and chopped eggs .
+Season | drained pasta Predicted: True
+
+Season with salt and black pepper .  
+...
+In a large bowl , combine drained pasta , celery , onion , olives , sweet pickles , carrots , green pepper , and chopped eggs .
+Season | chopped eggs Predicted: True
+
+In a large bowl , combine drained pasta , celery , onion , olives , sweet pickles , carrots , green pepper , and chopped eggs .
+...
+Stir in dressing , and mix well .
+combine | dressing Predicted: True
+
+Heat oil in a large Dutch oven over medium - high heat .
+...
+Working in 2 batches , brown short ribs on all sides , about 8 minutes per batch .
+Heat | short ribs Predicted: True
+
+Transfer short ribs to a plate .
+...
+Pour off all but 3 tablespoons drippings from pot .  
+Transfer | 3 tablespoons drippings Predicted: True
+
+Stir in wine , then add short ribs with any accumulated juices .
+...
+Stir in wine , then add short ribs with any accumulated juices .
+Stir | short ribs Predicted: True
+
+Transfer short ribs to a platter .
+...
+Strain sauce from pot into a measuring cup .
+Transfer | sauce Predicted: True
+
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+...
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+discard | sauce Predicted: True
+
+Heat through .
+...
+Add the cooked linguine , toss and heat through .
+Heat | the cooked linguine Predicted: True
+
+Place pot roast in slow cooker and coat with soup mixture .  
+...
+Place pot roast in slow cooker and coat with soup mixture .  
+Place | soup mixture Predicted: True
+
+
+cook
+sift
+Precision: 0.5806451612903226 Recall: 0.5 Accuracy: 0.7047619047619048 F-1 Score: 0.537313432835821
+Errors:
+False Negatives:
+Cut | 1/2-inch thick slices Predicted: False
+separate | rings Predicted: False
+Reserve | small inner rings Predicted: False
+Reserve | rings Predicted: False
+whisk | the dry mixture Predicted: False
+let | the onion rings Predicted: False
+whisk | the batter Predicted: False
+Heat | the oil Predicted: False
+let | dough Predicted: False
+combine | sugar/cinnamon mixture Predicted: False
+cut | 12 rolls Predicted: False
+let | rolls Predicted: False
+Bake | warm rolls Predicted: False
+Set | the chicken broth mixture Predicted: False
+reserve | the cooked pasta Predicted: False
+Strain | juice Predicted: False
+Skim | any foam Predicted: False
+set | the Parmesan cheese mixture Predicted: False
+
+False Positives:
+Add | rings Predicted: True
+whisk | the dry mixture Predicted: True
+Heat | the onion rings Predicted: True
+Heat | the batter Predicted: True
+dredge | the oil Predicted: True
+Beat | sifted ingredients Predicted: True
+combine | dough Predicted: True
+Spread | sugar/cinnamon mixture Predicted: True
+preheat | rolls Predicted: True
+beat | warm rolls Predicted: True
+simmer | the chicken broth mixture Predicted: True
+season | the cooked pasta Predicted: True
+Remove | the Parmesan cheese mixture Predicted: True

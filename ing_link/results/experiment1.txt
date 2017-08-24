@@ -1,0 +1,59 @@
+Dev Test Errors:
+False Negatives:
+macaroni | pasta Predicted: False
+eggs | eggs Predicted: False
+bone-in beef short ribs, cut crosswise into 2" pieces | short ribs Predicted: False
+Kosher salt | salt Predicted: False
+Kosher salt | salt Predicted: False
+freshly ground black pepper | pepper Predicted: False
+freshly ground black pepper | pepper Predicted: False
+flat-leaf parsley | all herbs Predicted: False
+thyme | all herbs Predicted: False
+oregano | all herbs Predicted: False
+rosemary | all herbs Predicted: False
+bay leaves | all herbs Predicted: False
+skinless, boneless chicken breast halves | the chicken Predicted: False
+salt | salt Predicted: False
+turkey kielbasa, cut diagonally into 1/4 inch slices | sausage Predicted: False
+pepper | pepper Predicted: False
+recipe pastry | the bottom crust Predicted: False
+recipe pastry | a lattice work crust Predicted: False
+unsalted butter | the butter Predicted: False
+
+False Positives:
+chopped red onion | onion Predicted: True
+pimento-stuffed green olives | olives Predicted: True
+pimento-stuffed green olives | green pepper Predicted: True
+chopped sweet pickle | sweet pickle juice Predicted: True
+chopped sweet pickle | sweet pickles Predicted: True
+carrots, grated | carrots Predicted: True
+green bell pepper, chopped | green pepper Predicted: True
+all-purpose flour | all herbs Predicted: True
+red bell pepper, sliced | green bell pepper Predicted: True
+green bell pepper, sliced | the red bell pepper Predicted: True
+Granny Smith apples - peeled, cored and sliced | the sugar and butter liquid Predicted: True
+Precision: 0.8823529411764706 Recall: 0.7627118644067796 Accuracy: 0.9828620394173093 F-1 Score: 0.8181818181818181
+Errors:
+False Negatives:
+large yellow onions | onions Predicted: False
+all-purpose flour, divided | 1 cup flour Predicted: False
+all-purpose flour, divided | remaining 2 cups flour Predicted: False
+kosher salt | salt Predicted: False
+more | salt Predicted: False
+vegetable oil | oil Predicted: False
+all-purpose flour | flour Predicted: False
+baking soda | baking powder Predicted: False
+baking powder | soda Predicted: False
+chopped walnuts | nuts Predicted: False
+butter, softened | 1/4 cup butter Predicted: False
+skinless, boneless chicken breast halves - cut into cubes | chicken Predicted: False
+very ripe strawberries, hulled and cut into chunks | strawberries Predicted: False
+tilapia fillets | fillets Predicted: False
+
+False Positives:
+garlic powder | onion powder Predicted: True
+baking soda | soda Predicted: True
+baking powder | baking powder Predicted: True
+salt | salt Predicted: True
+white sugar | brown sugar Predicted: True
+green bell pepper, seeded and thinly sliced | red peppers Predicted: True

@@ -24,6 +24,7 @@ def convert_to_crfsuite(src_path, dst_path, pattern, output_pattern):
                 output_values = []
                 # map each value name in pattern to the respective value
                 values = dict(zip(pattern, line.split('\t')))
+                print(src_path)
                 id_ = values["id"]
                 if id_ == '-':
                     output_values.append('O')

@@ -1,0 +1,46 @@
+Dev Test Errors:
+False Negatives:
+Pour or scoop the batter onto the griddle , using approximately 1/4 cup for each pancake . Brown on both sides and serve hot .
+the batter | Pour Predicted: False
+
+Pour or scoop the batter onto the griddle , using approximately 1/4 cup for each pancake . Brown on both sides and serve hot .
+the griddle | Pour Predicted: False
+
+When cool enough to handle , peel and chop eggs .  
+eggs | peel Predicted: False
+
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+fat | discard Predicted: False
+
+
+False Positives:
+Meanwhile , place eggs in a saucepan , and fill with enough cold water to cover eggs completely by about 1 inch .
+eggs | cover Predicted: True
+
+Immediately remove from hot water and cool in an ice water bath .
+hot water | remove Predicted: True
+
+When cool enough to handle , peel and chop eggs .  
+eggs | chop Predicted: True
+
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+fat | Spoon Predicted: True
+
+Stir in flour to form a paste .
+a paste | form Predicted: True
+
+Precision: 0.9424460431654677 Recall: 0.9849624060150376 Accuracy: 0.9504950495049505 F-1 Score: 0.9632352941176471
+Errors:
+False Negatives:
+1/2-inch thick slices | separate Predicted: False
+two 8 x 4 inch pans | Grease Predicted: False
+
+False Positives:
+1/2-inch thick slices | Cut Predicted: True
+rings | separate Predicted: True
+small inner rings | Reserve Predicted: True
+the oil | drop Predicted: True
+two 8 x 4 inch pans | flour Predicted: True
+12 rolls | cut Predicted: True
+juice | Strain Predicted: True
+any foam | Skim Predicted: True

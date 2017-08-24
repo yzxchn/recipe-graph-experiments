@@ -1,0 +1,119 @@
+Dev Test Errors:
+False Negatives:
+Make a well in the center and pour in the milk , egg and melted butter ; mix until smooth .  
+mix | the batter Predicted: False
+
+Immediately remove from hot water and cool in an ice water bath .
+cool | eggs Predicted: False
+
+Set aside .  
+Set | drained pasta Predicted: False
+
+When cool enough to handle , peel and chop eggs .  
+chop | chopped eggs Predicted: False
+
+Season with salt and black pepper .  
+Season | dressing Predicted: False
+
+Season short ribs with salt and pepper .
+Season | short ribs Predicted: False
+
+Working in 2 batches , brown short ribs on all sides , about 8 minutes per batch .
+brown | 3 tablespoons drippings Predicted: False
+
+Transfer short ribs to a plate .
+Transfer | short ribs Predicted: False
+
+Cook until short ribs are tender , 2 - 2 1/2 hours .
+Cook | sauce Predicted: False
+
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+Spoon | fat Predicted: False
+
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+Spoon | sauce Predicted: False
+
+Add pasta and cook for 8 to 10 minutes or until al dente ; drain .  
+drain | the cooked linguine Predicted: False
+
+Stir in flour to form a paste .
+form | a paste Predicted: False
+
+In a slow cooker , mix cream of mushroom soup , dry onion soup mix and water .
+mix | soup mixture Predicted: False
+
+
+False Positives:
+Pour or scoop the batter onto the griddle , using approximately 1/4 cup for each pancake . Brown on both sides and serve hot .
+Pour | the batter Predicted: True
+
+When cool enough to handle , peel and chop eggs .  
+peel | eggs Predicted: True
+
+Season with salt and black pepper .  
+Season | drained pasta Predicted: True
+
+Season with salt and black pepper .  
+Season | chopped eggs Predicted: True
+
+In a large bowl , combine drained pasta , celery , onion , olives , sweet pickles , carrots , green pepper , and chopped eggs .
+combine | dressing Predicted: True
+
+Heat oil in a large Dutch oven over medium - high heat .
+Heat | short ribs Predicted: True
+
+Transfer short ribs to a plate .
+Transfer | 3 tablespoons drippings Predicted: True
+
+Stir in wine , then add short ribs with any accumulated juices .
+Stir | short ribs Predicted: True
+
+Transfer short ribs to a platter .
+Transfer | sauce Predicted: True
+
+Spoon fat from surface of sauce and discard ; season sauce to taste with salt and pepper .
+discard | sauce Predicted: True
+
+Heat through .
+Heat | the cooked linguine Predicted: True
+
+Place pot roast in slow cooker and coat with soup mixture .  
+Place | soup mixture Predicted: True
+
+Precision: 0.5666666666666667 Recall: 0.4722222222222222 Accuracy: 0.6952380952380952 F-1 Score: 0.5151515151515152
+Errors:
+False Negatives:
+Cut | 1/2-inch thick slices Predicted: False
+separate | rings Predicted: False
+Reserve | small inner rings Predicted: False
+Reserve | rings Predicted: False
+whisk | the dry mixture Predicted: False
+let | the onion rings Predicted: False
+whisk | the batter Predicted: False
+Heat | the oil Predicted: False
+Sift | sifted ingredients Predicted: False
+let | dough Predicted: False
+combine | sugar/cinnamon mixture Predicted: False
+cut | 12 rolls Predicted: False
+let | rolls Predicted: False
+Bake | warm rolls Predicted: False
+Set | the chicken broth mixture Predicted: False
+reserve | the cooked pasta Predicted: False
+Strain | juice Predicted: False
+Skim | any foam Predicted: False
+set | the Parmesan cheese mixture Predicted: False
+
+False Positives:
+Add | rings Predicted: True
+whisk | the dry mixture Predicted: True
+Heat | the onion rings Predicted: True
+Heat | the batter Predicted: True
+dredge | the oil Predicted: True
+Beat | sifted ingredients Predicted: True
+combine | dough Predicted: True
+Spread | sugar/cinnamon mixture Predicted: True
+preheat | rolls Predicted: True
+beat | warm rolls Predicted: True
+simmer | the chicken broth mixture Predicted: True
+season | the cooked pasta Predicted: True
+Remove | the Parmesan cheese mixture Predicted: True

@@ -1,0 +1,78 @@
+Dev Test Errors:
+False Negatives:
+macaroni | pasta Predicted: False
+bone-in beef short ribs, cut crosswise into 2" pieces | short ribs Predicted: False
+celery stalks, chopped | celery Predicted: False
+flat-leaf parsley | all herbs Predicted: False
+thyme | all herbs Predicted: False
+oregano | all herbs Predicted: False
+rosemary | all herbs Predicted: False
+bay leaves | all herbs Predicted: False
+garlic, halved crosswise | garlic Predicted: False
+skinless, boneless chicken breast halves | the chicken Predicted: False
+turkey kielbasa, cut diagonally into 1/4 inch slices | sausage Predicted: False
+whole peeled tomatoes, chopped | tomatoes with juice Predicted: False
+recipe pastry | the bottom crust Predicted: False
+recipe pastry | a lattice work crust Predicted: False
+
+False Positives:
+eggs | eggs Predicted: True
+eggs | eggs Predicted: True
+eggs | eggs Predicted: True
+eggs | chopped eggs Predicted: True
+ground black pepper | green pepper Predicted: True
+chopped celery | celery Predicted: True
+chopped red onion | onion Predicted: True
+pimento-stuffed green olives | olives Predicted: True
+carrots, grated | carrots Predicted: True
+green bell pepper, chopped | black pepper Predicted: True
+green bell pepper, chopped | green pepper Predicted: True
+red bell pepper, sliced | green bell pepper Predicted: True
+red bell pepper, sliced | lemon pepper Predicted: True
+red bell pepper, sliced | ground black pepper Predicted: True
+green bell pepper, sliced | the red bell pepper Predicted: True
+green bell pepper, sliced | lemon pepper Predicted: True
+green bell pepper, sliced | ground black pepper Predicted: True
+lemon pepper | the red bell pepper Predicted: True
+lemon pepper | green bell pepper Predicted: True
+lemon pepper | ground black pepper Predicted: True
+ground black pepper | the red bell pepper Predicted: True
+ground black pepper | green bell pepper Predicted: True
+ground black pepper | lemon pepper Predicted: True
+uncooked rice | rice Predicted: True
+green bell pepper, chopped | pepper Predicted: True
+pepper | green pepper Predicted: True
+white sugar | brown sugar Predicted: True
+packed brown sugar | white sugar Predicted: True
+Precision: 0.7424242424242424 Recall: 0.8305084745762712 Accuracy: 0.9768637532133676 F-1 Score: 0.784
+Errors:
+False Negatives:
+garlic powder | garlic Predicted: False
+cayenne pepper | cayenne Predicted: False
+more | salt Predicted: False
+baking soda | baking powder Predicted: False
+baking powder | soda Predicted: False
+chopped walnuts | nuts Predicted: False
+skinless, boneless chicken breast halves - cut into cubes | chicken Predicted: False
+green bell pepper, seeded and thinly sliced | green Predicted: False
+red bell pepper, seeded and thinly sliced | red peppers Predicted: False
+very ripe strawberries, hulled and cut into chunks | strawberries Predicted: False
+
+False Positives:
+all-purpose flour, divided | flour Predicted: True
+garlic powder | onion powder Predicted: True
+kosher salt | salt Predicted: True
+vegetable oil | the oil Predicted: True
+baking soda | soda Predicted: True
+baking powder | baking powder Predicted: True
+salt | salt Predicted: True
+white sugar | brown sugar Predicted: True
+white sugar | confectioners' sugar Predicted: True
+brown sugar, packed | confectioners' sugar Predicted: True
+butter, softened | 1/4 cup butter Predicted: True
+butter, softened | 1/3 cup butter Predicted: True
+confectioners' sugar | brown sugar Predicted: True
+dry penne pasta | pasta Predicted: True
+dry penne pasta | the cooked pasta Predicted: True
+tilapia fillets | the fillets Predicted: True
+tilapia fillets | the fillets Predicted: True

@@ -5,3 +5,7 @@ ins_ER/ins_ER_data
 ins_ER/with_features
 __pycache__
 *.pyc
+*data
+models/
+with_features/
+*.swp

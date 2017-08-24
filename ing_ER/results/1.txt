@@ -1,0 +1,1108 @@
+CRFSuite 0.12  Copyright (c) 2007-2011 Naoaki Okazaki
+
+Start time of the training: 2017-07-29T00:12:58Z
+
+Reading the data set(s)
+[1] ing_ER/with_features/train.fts
+0....1....2....3....4....5....6....7....8....9....10
+Number of instances: 541
+Seconds required: 0.060
+[2] ing_ER/with_features/test.fts
+0....1....2....3....4....5....6....7....8....9....10
+Number of instances: 114
+Seconds required: 0.010
+
+Statistics the data set(s)
+Number of data sets (groups): 2
+Number of instances: 653
+Number of items: 3658
+Number of attributes: 8659
+Number of labels: 7
+
+Holdout group: 2
+
+Feature generation
+type: CRF1d
+feature.minfreq: 0.000000
+feature.possible_states: 0
+feature.possible_transitions: 0
+0....1....2....3....4....5....6....7....8....9....10
+Number of features: 10399
+Seconds required: 0.020
+
+L-BFGS optimization
+c1: 0.000000
+c2: 1.000000
+num_memories: 6
+max_iterations: 2147483647
+epsilon: 0.000010
+stop: 10
+delta: 0.000010
+linesearch: MoreThuente
+linesearch.max_iterations: 20
+
+***** Iteration #1 *****
+Loss: 3917.721835
+Feature norm: 1.000000
+Error norm: 1655.281471
+Active features: 10399
+Line search trials: 1
+Line search step: 0.000447
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (109, 133, 111) (0.8195, 0.9820, 0.8934)
+    B-UNIT: (86, 109, 91) (0.7890, 0.9451, 0.8600)
+    I-UNIT: (0, 0, 28) (0.0000, 0.0000, 0.0000)
+    B-ING: (83, 105, 115) (0.7905, 0.7217, 0.7545)
+    I-ING: (219, 291, 232) (0.7526, 0.9440, 0.8375)
+    O: (0, 0, 47) (0.0000, 0.0000, 0.0000)
+    I-QNT: (0, 0, 14) (0.0000, 0.0000, 0.0000)
+Macro-average precision, recall, F1: (0.450228, 0.513249, 0.477923)
+Item accuracy: 497 / 638 (0.7790)
+Instance accuracy: 68 / 113 (0.6018)
+
+***** Iteration #2 *****
+Loss: 1816.635297
+Feature norm: 4.603751
+Error norm: 579.796884
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (109, 134, 111) (0.8134, 0.9820, 0.8898)
+    B-UNIT: (90, 119, 91) (0.7563, 0.9890, 0.8571)
+    I-UNIT: (0, 0, 28) (0.0000, 0.0000, 0.0000)
+    B-ING: (83, 110, 115) (0.7545, 0.7217, 0.7378)
+    I-ING: (212, 275, 232) (0.7709, 0.9138, 0.8363)
+    O: (0, 0, 47) (0.0000, 0.0000, 0.0000)
+    I-QNT: (0, 0, 14) (0.0000, 0.0000, 0.0000)
+Macro-average precision, recall, F1: (0.442170, 0.515218, 0.474430)
+Item accuracy: 494 / 638 (0.7743)
+Instance accuracy: 66 / 113 (0.5841)
+
+***** Iteration #3 *****
+Loss: 1375.719091
+Feature norm: 4.768650
+Error norm: 467.018154
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 136, 111) (0.8162, 1.0000, 0.8988)
+    B-UNIT: (90, 114, 91) (0.7895, 0.9890, 0.8780)
+    I-UNIT: (0, 0, 28) (0.0000, 0.0000, 0.0000)
+    B-ING: (90, 113, 115) (0.7965, 0.7826, 0.7895)
+    I-ING: (216, 275, 232) (0.7855, 0.9310, 0.8521)
+    O: (0, 0, 47) (0.0000, 0.0000, 0.0000)
+    I-QNT: (0, 0, 14) (0.0000, 0.0000, 0.0000)
+Macro-average precision, recall, F1: (0.455366, 0.528951, 0.488340)
+Item accuracy: 507 / 638 (0.7947)
+Instance accuracy: 73 / 113 (0.6460)
+
+***** Iteration #4 *****
+Loss: 826.025795
+Feature norm: 5.973016
+Error norm: 302.121627
+Active features: 10399
+Line search trials: 2
+Line search step: 0.437712
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 118, 111) (0.9407, 1.0000, 0.9694)
+    B-UNIT: (90, 102, 91) (0.8824, 0.9890, 0.9326)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (101, 115, 115) (0.8783, 0.8783, 0.8783)
+    I-ING: (219, 242, 232) (0.9050, 0.9440, 0.9241)
+    O: (20, 21, 47) (0.9524, 0.4255, 0.5882)
+    I-QNT: (12, 12, 14) (1.0000, 0.8571, 0.9231)
+Macro-average precision, recall, F1: (0.936947, 0.870559, 0.887957)
+Item accuracy: 581 / 638 (0.9107)
+Instance accuracy: 95 / 113 (0.8407)
+
+***** Iteration #5 *****
+Loss: 683.898729
+Feature norm: 6.709395
+Error norm: 183.930965
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 117, 111) (0.9487, 1.0000, 0.9737)
+    B-UNIT: (90, 98, 91) (0.9184, 0.9890, 0.9524)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (105, 115, 115) (0.9130, 0.9130, 0.9130)
+    I-ING: (225, 248, 232) (0.9073, 0.9698, 0.9375)
+    O: (20, 20, 47) (1.0000, 0.4255, 0.5970)
+    I-QNT: (12, 12, 14) (1.0000, 0.8571, 0.9231)
+Macro-average precision, recall, F1: (0.955341, 0.879222, 0.899529)
+Item accuracy: 591 / 638 (0.9263)
+Instance accuracy: 98 / 113 (0.8673)
+
+***** Iteration #6 *****
+Loss: 549.420494
+Feature norm: 8.109518
+Error norm: 122.394166
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 115, 111) (0.9652, 1.0000, 0.9823)
+    B-UNIT: (90, 99, 91) (0.9091, 0.9890, 0.9474)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (108, 117, 115) (0.9231, 0.9391, 0.9310)
+    I-ING: (222, 239, 232) (0.9289, 0.9569, 0.9427)
+    O: (25, 27, 47) (0.9259, 0.5319, 0.6757)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.939323, 0.896299, 0.909706)
+Item accuracy: 596 / 638 (0.9342)
+Instance accuracy: 101 / 113 (0.8938)
+
+***** Iteration #7 *****
+Loss: 461.355822
+Feature norm: 9.661723
+Error norm: 117.052017
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 114, 111) (0.9737, 1.0000, 0.9867)
+    B-UNIT: (89, 97, 91) (0.9175, 0.9780, 0.9468)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (108, 116, 115) (0.9310, 0.9391, 0.9351)
+    I-ING: (227, 245, 232) (0.9265, 0.9784, 0.9518)
+    O: (25, 25, 47) (1.0000, 0.5319, 0.6944)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.953122, 0.897808, 0.914808)
+Item accuracy: 600 / 638 (0.9404)
+Instance accuracy: 102 / 113 (0.9027)
+
+***** Iteration #8 *****
+Loss: 409.147119
+Feature norm: 10.853471
+Error norm: 62.802260
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 114, 111) (0.9737, 1.0000, 0.9867)
+    B-UNIT: (90, 97, 91) (0.9278, 0.9890, 0.9574)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (108, 115, 115) (0.9391, 0.9391, 0.9391)
+    I-ING: (229, 246, 232) (0.9309, 0.9871, 0.9582)
+    O: (25, 25, 47) (1.0000, 0.5319, 0.6944)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.956374, 0.900610, 0.917819)
+Item accuracy: 603 / 638 (0.9451)
+Instance accuracy: 103 / 113 (0.9115)
+
+***** Iteration #9 *****
+Loss: 370.460592
+Feature norm: 12.037336
+Error norm: 52.458306
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 98, 91) (0.9184, 0.9890, 0.9524)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (106, 114, 115) (0.9298, 0.9217, 0.9258)
+    I-ING: (227, 245, 232) (0.9265, 0.9784, 0.9518)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.954300, 0.902973, 0.919945)
+Item accuracy: 601 / 638 (0.9420)
+Instance accuracy: 102 / 113 (0.9027)
+
+***** Iteration #10 *****
+Loss: 351.192348
+Feature norm: 13.210496
+Error norm: 86.916084
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 96, 91) (0.9271, 0.9780, 0.9519)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (107, 115, 115) (0.9304, 0.9304, 0.9304)
+    I-ING: (227, 246, 232) (0.9228, 0.9784, 0.9498)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.955094, 0.902645, 0.920255)
+Item accuracy: 601 / 638 (0.9420)
+Instance accuracy: 103 / 113 (0.9115)
+
+***** Iteration #11 *****
+Loss: 326.963013
+Feature norm: 13.096313
+Error norm: 40.202453
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 98, 91) (0.9082, 0.9780, 0.9418)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (105, 115, 115) (0.9130, 0.9130, 0.9130)
+    I-ING: (225, 244, 232) (0.9221, 0.9698, 0.9454)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.949817, 0.898929, 0.915702)
+Item accuracy: 597 / 638 (0.9357)
+Instance accuracy: 101 / 113 (0.8938)
+
+***** Iteration #12 *****
+Loss: 313.166933
+Feature norm: 12.776693
+Error norm: 34.241875
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 98, 91) (0.9082, 0.9780, 0.9418)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (105, 115, 115) (0.9130, 0.9130, 0.9130)
+    I-ING: (225, 244, 232) (0.9221, 0.9698, 0.9454)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.949817, 0.898929, 0.915702)
+Item accuracy: 597 / 638 (0.9357)
+Instance accuracy: 101 / 113 (0.8938)
+
+***** Iteration #13 *****
+Loss: 299.949222
+Feature norm: 12.357213
+Error norm: 51.184019
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 97, 91) (0.9175, 0.9780, 0.9468)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (106, 116, 115) (0.9138, 0.9217, 0.9177)
+    I-ING: (225, 250, 232) (0.9000, 0.9698, 0.9336)
+    O: (21, 21, 47) (1.0000, 0.4468, 0.6176)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.948100, 0.881934, 0.899396)
+Item accuracy: 592 / 638 (0.9279)
+Instance accuracy: 100 / 113 (0.8850)
+
+***** Iteration #14 *****
+Loss: 294.898947
+Feature norm: 12.314848
+Error norm: 61.991817
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 96, 91) (0.9271, 0.9780, 0.9519)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (107, 116, 115) (0.9224, 0.9304, 0.9264)
+    I-ING: (226, 245, 232) (0.9224, 0.9741, 0.9476)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.953903, 0.902029, 0.919365)
+Item accuracy: 600 / 638 (0.9404)
+Instance accuracy: 102 / 113 (0.9027)
+
+***** Iteration #15 *****
+Loss: 289.201998
+Feature norm: 12.475739
+Error norm: 22.988084
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 96, 91) (0.9271, 0.9780, 0.9519)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (107, 116, 115) (0.9224, 0.9304, 0.9264)
+    I-ING: (226, 245, 232) (0.9224, 0.9741, 0.9476)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.953903, 0.902029, 0.919365)
+Item accuracy: 600 / 638 (0.9404)
+Instance accuracy: 102 / 113 (0.9027)
+
+***** Iteration #16 *****
+Loss: 286.924805
+Feature norm: 12.512605
+Error norm: 16.466497
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 96, 91) (0.9271, 0.9780, 0.9519)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (107, 116, 115) (0.9224, 0.9304, 0.9264)
+    I-ING: (226, 245, 232) (0.9224, 0.9741, 0.9476)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.953903, 0.902029, 0.919365)
+Item accuracy: 600 / 638 (0.9404)
+Instance accuracy: 102 / 113 (0.9027)
+
+***** Iteration #17 *****
+Loss: 284.269973
+Feature norm: 12.563097
+Error norm: 17.117191
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 94, 91) (0.9468, 0.9780, 0.9622)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (109, 116, 115) (0.9397, 0.9478, 0.9437)
+    I-ING: (228, 247, 232) (0.9231, 0.9828, 0.9520)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.959274, 0.905745, 0.923937)
+Item accuracy: 604 / 638 (0.9467)
+Instance accuracy: 104 / 113 (0.9204)
+
+***** Iteration #18 *****
+Loss: 280.915071
+Feature norm: 12.668339
+Error norm: 14.972131
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 95, 91) (0.9368, 0.9780, 0.9570)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (108, 115, 115) (0.9391, 0.9391, 0.9391)
+    I-ING: (228, 247, 232) (0.9231, 0.9828, 0.9520)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.957775, 0.904503, 0.922542)
+Item accuracy: 603 / 638 (0.9451)
+Instance accuracy: 103 / 113 (0.9115)
+
+***** Iteration #19 *****
+Loss: 279.805521
+Feature norm: 12.731836
+Error norm: 17.572404
+Active features: 10399
+Line search trials: 2
+Line search step: 0.441437
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 93, 91) (0.9570, 0.9780, 0.9674)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 248, 232) (0.9234, 0.9871, 0.9542)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962004, 0.907603, 0.926233)
+Item accuracy: 606 / 638 (0.9498)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #20 *****
+Loss: 278.646335
+Feature norm: 12.799263
+Error norm: 8.411697
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 94, 91) (0.9468, 0.9780, 0.9622)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (109, 115, 115) (0.9478, 0.9478, 0.9478)
+    I-ING: (229, 248, 232) (0.9234, 0.9871, 0.9542)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.960486, 0.906361, 0.924835)
+Item accuracy: 605 / 638 (0.9483)
+Instance accuracy: 104 / 113 (0.9204)
+
+***** Iteration #21 *****
+Loss: 277.972382
+Feature norm: 12.823291
+Error norm: 7.292403
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 95, 91) (0.9368, 0.9780, 0.9570)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (108, 115, 115) (0.9391, 0.9391, 0.9391)
+    I-ING: (228, 247, 232) (0.9231, 0.9828, 0.9520)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.957775, 0.904503, 0.922542)
+Item accuracy: 603 / 638 (0.9451)
+Instance accuracy: 103 / 113 (0.9115)
+
+***** Iteration #22 *****
+Loss: 277.178509
+Feature norm: 12.856141
+Error norm: 7.642100
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 95, 91) (0.9368, 0.9780, 0.9570)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (108, 115, 115) (0.9391, 0.9391, 0.9391)
+    I-ING: (228, 247, 232) (0.9231, 0.9828, 0.9520)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.957775, 0.904503, 0.922542)
+Item accuracy: 603 / 638 (0.9451)
+Instance accuracy: 103 / 113 (0.9115)
+
+***** Iteration #23 *****
+Loss: 276.929930
+Feature norm: 12.876456
+Error norm: 8.882052
+Active features: 10399
+Line search trials: 2
+Line search step: 0.430762
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 95, 91) (0.9368, 0.9780, 0.9570)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (108, 115, 115) (0.9391, 0.9391, 0.9391)
+    I-ING: (228, 247, 232) (0.9231, 0.9828, 0.9520)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.957775, 0.904503, 0.922542)
+Item accuracy: 603 / 638 (0.9451)
+Instance accuracy: 103 / 113 (0.9115)
+
+***** Iteration #24 *****
+Loss: 276.572679
+Feature norm: 12.881838
+Error norm: 5.051879
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 94, 91) (0.9468, 0.9780, 0.9622)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (109, 116, 115) (0.9397, 0.9478, 0.9437)
+    I-ING: (228, 247, 232) (0.9231, 0.9828, 0.9520)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.959274, 0.905745, 0.923937)
+Item accuracy: 604 / 638 (0.9467)
+Instance accuracy: 104 / 113 (0.9204)
+
+***** Iteration #25 *****
+Loss: 276.305608
+Feature norm: 12.891312
+Error norm: 3.813079
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 93, 91) (0.9570, 0.9780, 0.9674)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 248, 232) (0.9234, 0.9871, 0.9542)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962004, 0.907603, 0.926233)
+Item accuracy: 606 / 638 (0.9498)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #26 *****
+Loss: 276.023515
+Feature norm: 12.898013
+Error norm: 4.574688
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 93, 91) (0.9570, 0.9780, 0.9674)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 248, 232) (0.9234, 0.9871, 0.9542)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962004, 0.907603, 0.926233)
+Item accuracy: 606 / 638 (0.9498)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #27 *****
+Loss: 275.917628
+Feature norm: 12.901494
+Error norm: 4.577954
+Active features: 10399
+Line search trials: 2
+Line search step: 0.493778
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 93, 91) (0.9570, 0.9780, 0.9674)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 248, 232) (0.9234, 0.9871, 0.9542)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962004, 0.907603, 0.926233)
+Item accuracy: 606 / 638 (0.9498)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #28 *****
+Loss: 275.827045
+Feature norm: 12.904328
+Error norm: 2.807347
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 93, 91) (0.9570, 0.9780, 0.9674)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 248, 232) (0.9234, 0.9871, 0.9542)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962004, 0.907603, 0.926233)
+Item accuracy: 606 / 638 (0.9498)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #29 *****
+Loss: 275.731008
+Feature norm: 12.905125
+Error norm: 1.921784
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (89, 93, 91) (0.9570, 0.9780, 0.9674)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 248, 232) (0.9234, 0.9871, 0.9542)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962004, 0.907603, 0.926233)
+Item accuracy: 606 / 638 (0.9498)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #30 *****
+Loss: 275.672834
+Feature norm: 12.904633
+Error norm: 1.814336
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #31 *****
+Loss: 275.650680
+Feature norm: 12.902519
+Error norm: 2.918996
+Active features: 10399
+Line search trials: 2
+Line search step: 0.360403
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #32 *****
+Loss: 275.620278
+Feature norm: 12.900518
+Error norm: 1.282344
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #33 *****
+Loss: 275.607589
+Feature norm: 12.899235
+Error norm: 1.051630
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #34 *****
+Loss: 275.588123
+Feature norm: 12.895976
+Error norm: 1.873533
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #35 *****
+Loss: 275.581493
+Feature norm: 12.894519
+Error norm: 1.469331
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #36 *****
+Loss: 275.575807
+Feature norm: 12.894860
+Error norm: 0.735114
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #37 *****
+Loss: 275.571292
+Feature norm: 12.894658
+Error norm: 0.573998
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #38 *****
+Loss: 275.565562
+Feature norm: 12.893697
+Error norm: 0.570118
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #39 *****
+Loss: 275.559915
+Feature norm: 12.892361
+Error norm: 0.905394
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #40 *****
+Loss: 275.557847
+Feature norm: 12.891315
+Error norm: 0.485221
+Active features: 10399
+Line search trials: 2
+Line search step: 0.492932
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #41 *****
+Loss: 275.556751
+Feature norm: 12.890968
+Error norm: 0.286586
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #42 *****
+Loss: 275.555807
+Feature norm: 12.890757
+Error norm: 0.319386
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #43 *****
+Loss: 275.554852
+Feature norm: 12.890269
+Error norm: 0.291776
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #44 *****
+Loss: 275.554085
+Feature norm: 12.889871
+Error norm: 0.432819
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #45 *****
+Loss: 275.553477
+Feature norm: 12.889518
+Error norm: 0.191011
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #46 *****
+Loss: 275.553145
+Feature norm: 12.889263
+Error norm: 0.164341
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #47 *****
+Loss: 275.552904
+Feature norm: 12.889003
+Error norm: 0.171338
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #48 *****
+Loss: 275.552776
+Feature norm: 12.888834
+Error norm: 0.235783
+Active features: 10399
+Line search trials: 2
+Line search step: 0.362627
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #49 *****
+Loss: 275.552616
+Feature norm: 12.888653
+Error norm: 0.092085
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #50 *****
+Loss: 275.552556
+Feature norm: 12.888644
+Error norm: 0.078255
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #51 *****
+Loss: 275.552452
+Feature norm: 12.888670
+Error norm: 0.084435
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #52 *****
+Loss: 275.552356
+Feature norm: 12.888685
+Error norm: 0.100501
+Active features: 10399
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+***** Iteration #53 *****
+Loss: 275.552335
+Feature norm: 12.888675
+Error norm: 0.056716
+Active features: 10399
+Line search trials: 2
+Line search step: 0.205875
+Seconds required for this iteration: 0.010
+Performance by label (#match, #model, #ref) (precision, recall, F1):
+    B-QNT: (111, 113, 111) (0.9823, 1.0000, 0.9911)
+    B-UNIT: (90, 94, 91) (0.9574, 0.9890, 0.9730)
+    I-UNIT: (28, 28, 28) (1.0000, 1.0000, 1.0000)
+    B-ING: (110, 116, 115) (0.9483, 0.9565, 0.9524)
+    I-ING: (229, 247, 232) (0.9271, 0.9871, 0.9562)
+    O: (27, 27, 47) (1.0000, 0.5745, 0.7297)
+    I-QNT: (12, 13, 14) (0.9231, 0.8571, 0.8889)
+Macro-average precision, recall, F1: (0.962604, 0.909173, 0.927315)
+Item accuracy: 607 / 638 (0.9514)
+Instance accuracy: 105 / 113 (0.9292)
+
+L-BFGS terminated with the stopping criteria
+Total seconds required for training: 0.300
+
+End time of the training: 2017-07-29T00:12:58Z
+
